@@ -1,0 +1,316 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:scrollbars="none" >
+	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="5dp"
+			android:padding="15dp"
+			android:background="@drawable/layout"
+			android:orientation="vertical">
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingBottom="5dp"
+				android:paddingTop="5dp"
+				android:text="Select your target"
+				android:background="#000000"
+				android:textColor="@color/text"
+				android:textAppearance="?android:attr/textAppearanceLarge" />
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" >
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="URL " />
+				<EditText
+					android:id="@+id/url"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10"
+					android:text="http://www.">
+					<requestFocus />
+				</EditText>
+				<Button
+					android:id="@+id/lockURL"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="10dp"
+					android:layout_marginLeft="5dp"
+					android:background="@drawable/button"
+					android:textColor="#FFFFFF"
+					android:text="Lock On" />
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" >
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="IP " />
+				<EditText
+					android:id="@+id/ip1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10"
+					android:gravity="center"
+					android:inputType="number" />
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="." />
+				<EditText
+					android:id="@+id/ip2"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10"
+					android:gravity="center"
+					android:inputType="number" />
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="." />
+				<EditText
+					android:id="@+id/ip3"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10"
+					android:gravity="center"
+					android:inputType="number" />
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="." />
+				<EditText
+					android:id="@+id/ip4"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10"
+					android:gravity="center"
+					android:inputType="number" />
+				<Button
+					android:id="@+id/lockIP"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="5dp"
+					android:background="@drawable/button"
+					android:textColor="#FFFFFF"
+					android:padding="10dp"
+					android:text="Lock On" />
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="5dp"
+			android:padding="15dp"
+			android:background="@drawable/layout"
+			android:orientation="vertical">
+			<TextView
+				android:id="@+id/target"
+				android:layout_width="match_parent"
+				android:layout_height="88dp"
+				android:background="@color/foreground"
+				android:gravity="center"
+				android:text="NONE"
+				android:textColor="@color/text"
+				android:textSize="40dp" />
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="5dp"
+			android:padding="15dp"
+			android:background="@drawable/layout"
+			android:orientation="vertical">
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingBottom="5dp"
+				android:paddingTop="5dp"
+				android:text="Settings"
+				android:background="#000000"
+				android:textColor="@color/text"
+				android:textAppearance="?android:attr/textAppearanceLarge" />
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" >
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Timeout (ms)" />
+				<EditText
+					android:id="@+id/timeout"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10"
+					android:gravity="center"
+					android:inputType="number"
+					android:text="9001"/>
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Port " />
+				<EditText
+					android:id="@+id/port"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10"
+					android:gravity="center"
+					android:inputType="number"
+					android:text="80" >
+				</EditText>
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" >
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:gravity="center"
+					android:text="Message " />
+				<EditText
+					android:id="@+id/message"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10"
+					android:text="Im Gymkhana-Studio from CyberGhostNet." >
+				</EditText>
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" >
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:gravity="center"
+					android:text="Method " />
+				<RadioGroup
+					android:id="@+id/radio"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" >
+				</RadioGroup>
+				<Spinner
+					android:id="@+id/method"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:entries="@array/attackmethods" />
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:gravity="center_vertical"
+					android:text="Threads " />
+				<EditText
+					android:id="@+id/threads"
+					android:layout_width="77dp"
+					android:layout_height="wrap_content"
+					android:ems="10"
+					android:gravity="center"
+					android:inputType="number"
+					android:singleLine="true"
+					android:text="10" />
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="5dp"
+			android:padding="15dp"
+			android:background="@drawable/layout"
+			android:orientation="vertical">
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:text="&lt;= faster   Speed   slower =>" />
+			<SeekBar
+				android:id="@+id/speed"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:max="100"
+				android:paddingLeft="20dp"
+				android:paddingRight="20dp" />
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="5dp"
+			android:padding="15dp"
+			android:background="@drawable/layout"
+			android:orientation="vertical">
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingBottom="5dp"
+				android:paddingTop="5dp"
+				android:text="Status"
+				android:background="#000000"
+				android:textColor="@color/text"
+				android:textAppearance="?android:attr/textAppearanceLarge" />
+			<TextView
+				android:id="@+id/statusTVtime"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:text="Elapsed Time: 0.000s"
+				android:background="#22000000"
+				android:textSize="15dp" />
+			<TextView
+				android:id="@+id/statusTV"
+				android:layout_width="match_parent"
+				android:layout_height="60dp"
+				android:background="@color/foreground"
+				android:gravity="center"
+				android:text="HITS: 0"
+				android:textColor="@color/text"
+				android:textSize="30dp"
+				android:textStyle="bold" />
+			<TextView
+				android:id="@+id/statusTVpackets"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:background="#22000000"
+				android:text="Packets/sec: 0"
+				android:textSize="15dp" />
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="5dp"
+			android:padding="15dp"
+			android:background="@drawable/layout"
+			android:orientation="horizontal">
+			<Button
+				android:id="@+id/fireButton"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:onClick="fire"
+				android:text="FIRE"
+				android:padding="10dp"
+				android:background="@drawable/button"
+				android:textColor="@color/text"
+				android:textSize="20dp" />
+		</LinearLayout>
+	</LinearLayout>
+</ScrollView>

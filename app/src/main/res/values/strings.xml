@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LOIC</string>
+    <string name="menu_settings">Settings</string>
+    <color name="background">#122432</color>
+    <color name="foreground">#244864</color>
+    <color name="button">#326496</color>
+    <color name="text">#FFFFFF</color>
+    <color name="fire">#b71c1c</color>
+    <string-array name="attackmethods">
+        <item>"TCP"</item>
+        <item>"UDP"</item>
+        <item>"HTTP"</item> 
+    </string-array>
+    <color name="grey">#202020</color>
+    <color name="darkgrey">#161616</color>
+</resources>
